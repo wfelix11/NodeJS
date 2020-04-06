@@ -1,7 +1,7 @@
 {
-  "name": "Curso_NodeJS",
+  "name": "CursoNodeJS",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend com NodeJS",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server.js",
@@ -9,7 +9,7 @@
     "helpMigration": "echo Para Criar a migrations utilizar o comando npx knex migrate:make migration_name",
     "builder": "npx knex migrate:latest",
     "rollback": "npx knex migrate:rollback --all",
-    
+
     "list": "npx knex migrate:list"
   },
   "keywords": [],
