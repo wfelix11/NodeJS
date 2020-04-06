@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    
+    "helpMigration": "echo Para Criar a migrations utilizar o comando npx knex migrate:make migration_name",
+    "builder": "npx knex migrate:latest",
+    "rollback": "npx knex migrate:rollback --all",
+    
+    "list": "npx knex migrate:list"
   },
   "keywords": [],
-  "author": "",
+  "author": "Wesley Félix",
   "license": "ISC",
   "dependencies": {
     "celebrate": "^12.0.1",
@@ -22,3 +27,5 @@
     "nodemon": "^2.0.2"
   }
 }
+
+
